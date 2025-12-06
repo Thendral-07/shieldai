@@ -4,7 +4,7 @@ import { AnalysisResult, AnalysisStatus, InputMode, LanguageOption } from './typ
 import { analyzeContent } from './services/geminiService';
 import InputSection from './components/InputSection';
 import ResultsDashboard from './components/ResultsDashboard';
-import { Shield, Activity, Terminal, Globe, ChevronDown, CheckCircle2, Server, Database, Scan, Mic } from 'lucide-react';
+import { Shield, Activity, Terminal, ChevronDown, CheckCircle2, Server, Database, Scan, Mic, Globe } from 'lucide-react';
 import { LANGUAGES } from './constants';
 
 const App: React.FC = () => {
@@ -103,9 +103,6 @@ const App: React.FC = () => {
         audioBase64 = await fileToBase64(audioFile);
       }
 
-      // If LIVE_CALL, we might want to analyze "Simulated Live Audio" or just text if triggered
-      // For this demo, we assume the user clicked "Intercept" and we analyze the current context or empty for demo
-      
       const analysis = await analyzeContent(
         textInput || (inputMode === InputMode.LIVE_CALL ? "Simulated suspicious call transcript involving urgent bank transfer request." : null), 
         imageBase64, 

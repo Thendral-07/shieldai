@@ -106,25 +106,3 @@ export const DEMO_SCENARIOS: DemoScenario[] = [
 ];
 
 export const DEMO_IMAGE_URL = "https://picsum.photos/800/600";
-
-export const COUNTRY_COORDINATES: Record<string, { x: number; y: number }> = {
-  'USA': { x: 22, y: 32 },
-  'United States': { x: 22, y: 32 },
-  'Canada': { x: 18, y: 20 },
-  'UK': { x: 47, y: 24 },
-  'United Kingdom': { x: 47, y: 24 },
-  'Germany': { x: 50, y: 26 },
-  'France': { x: 48, y: 28 },
-  'Spain': { x: 46, y: 31 },
-  'Italy': { x: 51, y: 31 },
-  'Russia': { x: 70, y: 20 },
-  'China': { x: 78, y: 35 },
-  'India': { x: 70, y: 42 },
-  'Japan': { x: 88, y: 35 },
-  'Australia': { x: 85, y: 75 },
-  'Brazil': { x: 32, y: 65 },
-  'South Africa': { x: 53, y: 80 },
-  'Nigeria': { x: 48, y: 50 },
-  'Mexico': { x: 18, y: 42 },
-  'Argentina': { x: 28, y: 80 },
-};

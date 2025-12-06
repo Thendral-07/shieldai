@@ -77,12 +77,3 @@ export type LanguageOption = {
   dir: 'ltr' | 'rtl';
   flag: string;
 };
-
-export interface ThreatEvent {
-  id: string;
-  type: string;
-  country: string;
-  timestamp: string;
-  x?: number;
-  y?: number;
-}
