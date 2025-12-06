@@ -1,0 +1,8 @@
+{
+  "name": "ShieldAI",
+  "description": "The world’s first fully multimodal, intelligent scam-detection platform using Gemini 3 Pro.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
